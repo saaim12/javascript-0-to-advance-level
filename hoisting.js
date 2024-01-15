@@ -23,6 +23,21 @@ console.log(y); // ReferenceError: Cannot access 'y' before initialization
 let y = 10;
 console.log(y); // 10
 
+// Hoisting for let:
 
+// Variables declared with let are hoisted to the top of their block (or function) scope.
+// However, unlike var, they are not initialized during the hoisting phase.
+//  This results in the creation of a "temporal dead zone" where the variable exists, but you cannot access it before the declaration.
+console.log(x); // ReferenceError: Cannot access 'x' before initialization
+let x = 5;
+console.log(x); // 5
 
+//same as
+// Hoisting for const:
 
+// Variables declared with const also hoist to the top of their block (or function) scope.
+// Like let, they are not initialized during hoisting, and the temporal dead zone applies.
+// Additionally, const variables must be assigned a value during the declaration and this assignment is not hoisted.
+console.log(z); // ReferenceError: Cannot access 'y' before initialization
+const z = 10;
+console.log(z); // 10

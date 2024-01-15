@@ -8,7 +8,7 @@ hello();
 function hello(){
     console.log("Hello World");
 }
-//this is not possible beacue global context scanned it and made it undefined
+//this is not possible beacue global context scanned it and made it undefined it is making it avaliable but also making it undefined 
 console.log(name);
 var name="saaim" ;
 //but it gives and error in function assigned to a variable

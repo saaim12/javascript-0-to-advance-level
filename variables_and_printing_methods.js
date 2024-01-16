@@ -28,3 +28,4 @@ console.log(`
    `
 
 );
+console.log("name",name);

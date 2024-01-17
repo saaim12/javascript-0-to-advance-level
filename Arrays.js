@@ -36,5 +36,7 @@ console.log(fruits);
 fruits.unshift('mango');
 console.log(fruits);
 
-
-
+//a very useful method for arrays
+let evennumbers =[2,4,6,8,10];
+const iseven = (num) => { return num%2===0? true: false; };
+console.log(evennumbers.every(iseven));

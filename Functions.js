@@ -25,17 +25,7 @@ function incrementNumber(num) {
 }
 
 let myNumber = 10;
-
-console.log("Before function calling:", myNumber);
-
 incrementNumber(myNumber);
-
-console.log("After function: calling", myNumber);
-/*
-In the provided example, the variable num inside the incrementNumber function is incremented, but it doesn't affect the value of myNumber outside the function. This behavior is due to the fact that primitive values, like numbers, are passed by value in JavaScript.
-When you pass myNumber to the incrementNumber function, a copy of the value is passed to the parameter num. The increment operation num++ only affects the local variable num within the function scope. The original myNumber variable outside the function remains unchanged.*/
-
-
 //example of functional programming
 function greeting(){
     return "Hello, world!";
@@ -45,3 +35,14 @@ greeting();
 //we have a return statement so we have to assign it
 const func_result = greeting();
 console.log(func_result);
+//arrow functions
+const iseven = (num) => { return num%2===0? true: false; };
+console.log(iseven(10));
+//arrow functions without curly braces if it can be written in one line and also without return keyword
+const iseven1 = (num) => num%2===0? true: false;
+//or
+const iseven2 = (num) => (num%2===0? true: false);
+//a very useful method for arrays
+//also example for callback
+let evennumbers =[2,4,6,8,10];
+console.log(evennumbers.every((num)=> num%2===0? true: false));

@@ -53,4 +53,14 @@ console.log(arr.includes(2));
 let arr1 = [1, 2, 3, 4, 5];
 let arr2 = arr1.filter((num) => num%2===0? true: false);
 console.log(arr2);
+//slice method
+//syntax arr.slice(start,end)
+let arr3 = [1, 2, 3, 4, 5];
+let arr4 = arr3.slice(2, 4);
+console.log(arr4);
+//splice method
+//syntax arr.splice(start,counts(how much),value)
+let arr5 = [1, 2, 3, 4, 5];
+ arr5.splice(2, 2, 55, 56);
+console.log(arr5);
 

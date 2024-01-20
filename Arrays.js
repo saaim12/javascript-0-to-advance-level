@@ -40,3 +40,17 @@ console.log(fruits);
 let evennumbers =[2,4,6,8,10];
 const iseven = (num) => { return num%2===0? true: false; };
 console.log(evennumbers.every(iseven));
+//fill method 
+//syntax arr.fill("value",start,end)-->end is exclusive
+let arr = [1, 2, 3, 4, 5];
+arr.fill("a", 2, 4);
+console.log(arr);
+//includes method to check whether value is or not in array
+//syntax arr.includes("value")
+console.log(arr.includes(2));
+//filter method
+//syntax arr.filter(callback)
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = arr1.filter((num) => num%2===0? true: false);
+console.log(arr2);
+

@@ -1,16 +1,18 @@
-console.log('Script is running.'); // Check if this message appears in the console
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script is running.');
 
-const counter = document.querySelector('.counter');
-const increment = document.getElementById('increment');
-const decrement = document.getElementById('decrement');
-let count = 0;
+    let counter = document.querySelector('.counter');
+    let increment = document.getElementById('increment');
+    let decrement = document.getElementById('decrement');
+    let count = 0;
 
-increment.addEventListener('onclick', () => {
-    count++;
-    counter.textContent = count;
-});
+    increment.addEventListener('click', () => {
+        count++;
+        counter.textContent = count;
+    });
 
-decrement.addEventListener('click', () => {
-    count--;
-    counter.textContent = count;
+    decrement.addEventListener('click', () => {
+        count--;
+        counter.textContent = count;
+    });
 });

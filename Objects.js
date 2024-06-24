@@ -84,3 +84,8 @@ person.getcourse();
     They don't have their own this context; instead, they inherit the this value from their surrounding lexical (enclosing) scope. This means that the this in an arrow function is determined by where the arrow function is defined, not where it is executed.
      While this behavior can simplify certain code patterns, it's important to be aware of the differences, especially when using arrow functions as object methods, as they don't bind this to the object itself.
       Understanding these nuances is crucial for writing reliable and maintainable JavaScript code, particularly in scenarios involving object-oriented programming and asynchronous operations.*/
+ let a={name:"saaim",
+    age:22
+ }     
+ a.address="123"
+ console.log(a)

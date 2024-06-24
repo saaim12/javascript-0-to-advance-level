@@ -1,5 +1,6 @@
 //hoisting in java script
-// Hoisting is a behavior in JavaScript where variable and function declarations are moved (or "hoisted") to the top of their containing scope 
+// Hoisting is a behavior in JavaScript where variable and function declarations are moved (or "hoisted") to the top of their containing
+// scope 
 // during the compilation phase, before the code is executed. This means that you can use variables and functions in your code even before they are declared in the source code.
 // However, it's important to note that only the declarations are hoisted, not the initializations. Let's look at examples for both variables and functions:
 //there are two type of contexts in javascript global context and execution context
@@ -41,3 +42,6 @@ console.log(x); // 5
 console.log(z); // ReferenceError: Cannot access 'y' before initialization
 const z = 10;
 console.log(z); // 10
+
+console.log(hello2); // Output: undefined
+

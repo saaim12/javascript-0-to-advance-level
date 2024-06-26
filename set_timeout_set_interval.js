@@ -8,3 +8,5 @@ let timeoutID = setTimeout(() => {
 
 // Cancel the timeout
 clearTimeout(timeoutID);
+//if i comment line no 10 then it will not be displayed is printed i=on screen after 20 seeconds
+

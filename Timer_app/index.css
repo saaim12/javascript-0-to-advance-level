@@ -1,0 +1,57 @@
+.body{
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.time_box{
+    background-color: rgb(245, 245, 245);
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    box-shadow: 0px 0px 10px 0px black;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 9px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+}
+.btn_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+
+}
+.btn {
+    margin: 12px;
+    padding: 15px;
+    border: 2px solid #040404;
+    border-radius: 50px;
+    background-color: #1DA1F2; /* Twitter color */
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #0d95e8; /* Lighter shade of Twitter color */
+    border-color: #0d95e8; /* Match border color with hover color */
+}

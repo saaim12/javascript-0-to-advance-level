@@ -4,7 +4,7 @@ function sum(a,b){
 }
 function callbacksum(a,b,callbacksum){
     
-    callbacksum(a,b);
+   return callbacksum(a,b);
 }
 var s=callbacksum(1,2,sum);
 console.log(s);

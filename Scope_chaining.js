@@ -72,3 +72,9 @@ function hello(){
 const greet3=hello();
 greet3();
 //it is possible because at return it is assigned full lexical scope of the function
+//also  another thing for var scope is only function and for let and const it is {} these braces
+if (true) {
+    var v=20;
+}
+console.log(b);
+//for its solution we use let and const
